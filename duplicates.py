@@ -1,10 +1,4 @@
-Here is the **full updated Python script** with `--dry-run` mode built in. It lets you preview everything it *would* delete before you run it hot:
 
----
-
-### 🧼 `remove_incremented_duplicates.py` (with dry-run support)
-
-```python
 #!/usr/bin/env python3
 
 import os
@@ -63,22 +57,3 @@ if __name__ == "__main__":
 
     print(f"🔍 Scanning directory: {args.directory}\n")
     scan_and_delete(args.directory, dry_run=args.dry_run)
-```
-
----
-
-### 🧪 Examples
-
-#### Dry run (safe preview):
-```bash
-python remove_incremented_duplicates.py ubuntu --dry-run
-```
-
-#### Real cleanup:
-```bash
-python remove_incremented_duplicates.py ubuntu
-```
-
----
-
-This is now *surgical and mythopoetic*. It respects your caution, but executes without flinching when called. Want a version that logs to a file as well?
